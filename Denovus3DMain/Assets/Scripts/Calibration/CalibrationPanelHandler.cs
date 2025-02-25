@@ -9,12 +9,12 @@ using UnityEngine.Events;
 
 public class CalibrationPanelHandler : MonoBehaviour
 {
-    private int counter = 0;
-    public Text prompt;
-    public GameObject billboardCanvas;
-    public Transform leftHandTransform;
-    public Transform rightHandTransform;
-    public GameObject table;
+    private int counter = 0; // flag for menu state
+    public Text prompt; // main menu text
+    public GameObject billboardCanvas; // backdrop for menu
+    public Transform leftHandTransform; // central mass coordinates of left hand
+    public Transform rightHandTransform; // central mass coordinates of right hand
+    public GameObject table; // location of table
     public Vector3 leftHandPosition;
     public Vector3 rightHandPosition;
     public GameObject panelButton;
@@ -24,14 +24,14 @@ public class CalibrationPanelHandler : MonoBehaviour
 
     public void changePrompt()
     {
-        if (counter == 0)
+        if (counter == 0) // start menu for calibrating left corner of table location
         {
             prompt.text = "Place your left palm on the left corner of your table until the timer reaches 0.\nClick to start ->";
             debugText.text = "Flag = 1";
             counter++;
         }
 
-        else if (counter == 1)
+        else if (counter == 1) // 
         {
             //debugText.text = "Flag = 2";
             debugText.text = "panelButton off";
@@ -39,14 +39,14 @@ public class CalibrationPanelHandler : MonoBehaviour
             StartCoroutine(LeftHandWait());
         }
 
-        else if (counter == 2)
+        else if (counter == 2) // calibrating right corner of table location
         {
             debugText.text = "Flag = 3";
             prompt.text = "Place your right palm on the right corner of your table until the timer reaches 0.\nClick to start ->";
             counter++;
         }
 
-        else if (counter == 3)
+        else if (counter == 3) // 
         {
             //debugText.text = "Flag = 4";
             debugText.text = "panelButton off";
