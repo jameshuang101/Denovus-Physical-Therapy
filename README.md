@@ -1,5 +1,5 @@
 # Denovus-Physical-Therapy
-This is a project aimed at creating a virtual reality (VR) game-based application for upper-extremity physical therapy. Denovus VR-Assisted Physical Therapy won third place in the UT Dallas Capstone Project Awards in December of 2021.
+This is a project aimed at creating a virtual reality (VR) game-based application for upper-extremity physical therapy. Denovus VR-Assisted Physical Therapy won third place in the UT Dallas Biomedical Engineering Capstone Project Awards.
 
 ![Infographic_DENOVUS](https://user-images.githubusercontent.com/130106532/231019294-e4408248-ab27-4c66-be00-d2fd1992c6c8.png)
 
